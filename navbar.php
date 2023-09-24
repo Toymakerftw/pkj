@@ -16,6 +16,7 @@
                     echo '<a href="teamleader_dashboard.php">Dashboard</a>';
                     echo '<a href="registration.php">Add User</a>';
                     echo '<a href="delete_users.php">Delete User</a>';
+                    echo '<a href="assign_rfqs.php">Assign RFQ</a>';
                 } elseif ($_SESSION["usertype"] === "associate") {
                     echo '<a href="associate_dashboard.php">Dashboard</a>';
                 }
