@@ -13,9 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
             userTable.innerHTML = '';
 
             data.forEach(user => {
-                if (user.usertype === "teamleader") {
-                    return; // Team Leader should not see themselves
-                }
 
                 const row = userTable.insertRow();
                 const usernameCell = row.insertCell(0);

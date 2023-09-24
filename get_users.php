@@ -12,7 +12,7 @@ if (!isset($_SESSION["username"]) || $_SESSION["usertype"] !== "teamleader") {
 $db = new SQLite3("pkj.db");
 
 // Retrieve all users except the current Team Leader
-$stmt = $db->prepare("SELECT username, alias, usertype FROM users WHERE usertype != 'teamleader' AND username != :current_user");
+$stmt = $db->prepare("SELECT username, alias, usertype FROM users WHERE username != :current_user");
 $stmt->bindValue(":current_user", $_SESSION["username"], SQLITE3_TEXT);
 $result = $stmt->execute();
 

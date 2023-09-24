@@ -23,7 +23,7 @@ if ($data && isset($data->username)) {
 
     if ($result) {
         // Fetch the updated user list
-        $stmt = $db->prepare("SELECT username, alias, usertype FROM users WHERE usertype != 'teamleader' AND username != :current_user");
+        $stmt = $db->prepare("SELECT username, alias, usertype FROM users WHERE username != :current_user");
         $stmt->bindValue(":current_user", $_SESSION["username"], SQLITE3_TEXT);
         $result = $stmt->execute();
 
