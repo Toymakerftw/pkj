@@ -19,6 +19,7 @@
                     echo '<a href="assign_rfqs.php">Assign RFQ</a>';
                 } elseif ($_SESSION["usertype"] === "associate") {
                     echo '<a href="associate_dashboard.php">Dashboard</a>';
+                    echo '<a href="view.php">View RFQ</a>';
                 }
 
                 echo '<a href="logout.php" class="logout">Logout</a>';
