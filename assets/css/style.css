@@ -12,7 +12,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(180deg, #fff 50%, #0057E7 50%);
 }
 .container {
   position: relative;
@@ -109,11 +108,11 @@ form .input-field {
 }
 
 .button input {
-  background-color: #0057E7; /* Change the button background color */
+  background-color: #11101d; /* Change the button background color */
 }
 
 .button input:hover {
-  background-color: #003E99; /* Change the button hover color */
+  background-color: #000000; /* Change the button hover color */
 }
 
 .button input:active {

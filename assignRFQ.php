@@ -59,6 +59,7 @@
     </style>
 </head>
 <body>
+<?php include 'nav.php'; ?>
     <div class="container">
         <header>Assign RFQ</header>
         <form action="#">

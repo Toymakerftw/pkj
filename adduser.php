@@ -96,13 +96,13 @@
     }
 
     .radio-input:checked+.radio-text::before {
-      background-color: #007bff;
+      background-color: #11101d;
       /* Change the background color when selected */
     }
 
     /* Add hover effect */
     .radio-text:hover::before {
-      border: 1px solid #007bff;
+      border: 1px solid #000000;
     }
 
     /* Add error styles */
@@ -118,6 +118,7 @@
 </head>
 
 <body>
+<?php include 'nav.php'; ?>
   <div class="container">
     <header>Add User</header>
     <form action="#">

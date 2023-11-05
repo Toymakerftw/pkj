@@ -76,23 +76,24 @@
             font-size: 16px;
             font-weight: 400;
             text-decoration: none;
-            background-color: #0057E7; /* Change the button background color */
+            background-color: #11101d; /* Change the button background color */
             cursor: pointer;
             transition: all 0.3s ease;
         }
         .button a:hover {
-            background-color: #003E99; /* Change the button hover color */
+            background-color: #000000; /* Change the button hover color */
         }
 
     </style>
 </head>
 <body>
+<?php include 'nav.php'; ?>
     <div class="container mx-auto p-8 bg-white rounded-lg shadow-lg">
         <header>Welcome, Associate!</header>
         <p class="text-center text-gray-700 mb-4">This is your dashboard for managing assigned RFQs.</p>
 
         <!-- Display assigned RFQ count (Sample data) -->
-        <div class="text-center text-lg text-blue-500 font-semibold mb-4">Assigned RFQs: 10</div>
+        <div class="text-center text-lg text-11101d font-semibold mb-4">Assigned RFQs: 10</div>
 
         <div id="table-container">
             <table class="hidden" id="rfq-table">
